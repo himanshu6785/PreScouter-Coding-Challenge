@@ -5,7 +5,7 @@
  * 
  */
 ?>
-<html>
+<!DOCTYPE html>
 	
 	<head>
 		<title>PreScouter Coding Challenge</title>
