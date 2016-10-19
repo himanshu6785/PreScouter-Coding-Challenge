@@ -61,13 +61,6 @@ if(isset($_REQUEST['dCity']) && Isset($_REQUEST['aCity']) && isset($_REQUEST['ro
 }
 
 
-function getPossibleArrivalCities($allRoutes,$dcity){ 
-    // get all the possible arrival cities
-    $keys = array_keys(array_column($allRoutes, 'arrival'), $aCity);
-    echo $dcity;exit;
-}
-
-
 /*
  * 
  * Function to Get Cheapest Route b/w source and destination 
@@ -79,6 +72,11 @@ function getCheapestRoute($routes){
 }
 
 
+/*
+ * 
+ * User Defined Function to find Cheapest Route b/w source and destination 
+ * 
+ */
 function CostAscSort($item1,$item2)
 {
     if ($item1['cost'] == $item2['cost']) return 0;
@@ -97,6 +95,11 @@ function getFastestRoute($routes){
 }
 
 
+/*
+ * 
+ * User Defined Function to find Fastest Route b/w source and destination 
+ * 
+ */
 function TimeAscSort($item1,$item2)
 {
     if (ltrim($item1['duration']['h'],0) == $item2['duration']['h']) return 0;
