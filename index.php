@@ -69,6 +69,8 @@
 
 <!------------- Script Begins ------------------>
 <script type="text/javascript">
+	
+    /**** Function to Call Ajax to Get Route b/w source and destination *****/
     function getBestRoutes(){
 		
         var dCity = $('#departure_city').val();
@@ -80,19 +82,20 @@
             url: "ajax.php",
             data : { dCity : dCity, aCity : aCity, route : sort_route  },
             success: function(result){
-                $("#result_div").html(result);
+                $("#result_div").html(result);	// Adding response to Div
             }, error: function(jqXHR, textStatus, errorThrown) {
 				if(errorThrown){
-					$("#result_div").html(errorThrown);
+					$("#result_div").html(errorThrown);	// Adding response to Div
 				}
 				else{
-					$("#result_div").html("No Route Found");	
+					$("#result_div").html("No Route Found");	// Adding response to Div	
 				}
 			}
         });
  
     }
     
+    /**** Function to Reset From Fileds *****/
     function clearForm(){
 
 		$('#departure_city').prop('selectedIndex',0);
