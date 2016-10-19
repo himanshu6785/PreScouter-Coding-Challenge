@@ -73,9 +73,9 @@
     /**** Function to Call Ajax to Get Route b/w source and destination *****/
     function getBestRoutes(){
 		
-        var dCity = $('#departure_city').val();
-        var aCity = $('#arrival_city').val();
-        var sort_route = $('input[name=sort_route]:checked').val();
+        var dCity = $('#departure_city').val();		// Departure Value
+        var aCity = $('#arrival_city').val();		// Arrival Value
+        var sort_route = $('input[name=sort_route]:checked').val();	//Filter Value
  
         $.ajax({
             type: "POST",
