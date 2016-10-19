@@ -94,7 +94,7 @@
 					$("#result_div").html(errorThrown);	// Adding response to Div
 				}
 				else{
-					$("#result_div").html("No Route Found");	// Adding response to Div	
+					$("#result_div").html("No Route Found"); //Adding response to Div	
 				}
 			}
         });
@@ -106,9 +106,8 @@
 
 		$('#departure_city').prop('selectedIndex',0);
 		$('#arrival_city').prop('selectedIndex',0);
-        $('input[name="sort_route"]').prop('checked', false);
-        
-        $('#search').trigger('click');
+      		$('input[name="sort_route"]').prop('checked', false);
+  		$('#search').trigger('click');
         
 	}
 </script>
