@@ -1,0 +1,18 @@
+/*
+ * 
+ * Stylesheet for PreScouter Coding Challenge
+ * 
+ */
+ 
+*{margin:0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;}
+.container{margin: 50px auto 0;max-width: 400px;width: 100%;}
+#routeForm {border: 1px solid #CCC;width: 100%;display: inline-block;margin-bottom: 20px;padding: 20px;-webkit-box-shadow: 0 0 9px #ccc;-moz-box-shadow: 0 0 9px #ccc;-o-box-shadow: 0 0 9px #ccc;-ms-box-shadow: 0 0 9px #ccc;box-shadow: 0 0 9px #ccc;}
+#routeForm span {float: left;width: 180px;}
+#routeForm input[type="button"] {background: #ccc none repeat scroll 0 0;border: 0 none;margin-right: 10px;padding: 8px;}
+ul{background:#EEE;padding:10px;margin:0;float:left;list-style:none;width:100%;max-width:400px;}
+ul li{background:#FFF;margin:0 0 10px;float:left;width:100%;color:#777;}
+ul li span{float:left;padding:10px; max-width:200px;width:100%;display:inline-block;}
+ul li span ins{display:block;text-decoration:none;font-style:italic;font-size:13px;}
+ul li span + span{float:right;width:auto;}
+ul li span b{float:right;display:inline-block;}
+ul li:last-child span{font-weight:bold;}
