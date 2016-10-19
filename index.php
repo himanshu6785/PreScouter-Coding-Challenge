@@ -25,9 +25,9 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Container Div Starts -->
+<!-- container div starts -->
 <div class="container">
-	<!-- Form Starts -->
+	<!-- form starts -->
 	<form name="routeForm" id="routeForm">
 		<div>
 			<span>Departure City</span>    
@@ -65,13 +65,13 @@
 		</div>
 
 	</form>
-	<!-- Container Div Ends -->
+	<!-- form ends -->
 	
-	<!-- Response Div -->
+	<!-- response div -->
 	<div id="result_div"></div>
 	
 </div>
-<!-- Container Div Ends -->
+<!-- container div ends -->
 
 <!------------- Script Begins ------------------>
 <script type="text/javascript">
